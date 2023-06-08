@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Frase Aleatoria</title>
+</head>
+<body>
+  <h1 id="fraseAleatoria"></h1>
+  <button onclick="mostrarFraseAleatoria()">Mostra mi numero de la suerte</button>
+
+  <script>
+    var frases = [
+      "La vida es 10% lo que nos sucede y 90% cómo reaccionamos ante ello.",
+      "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+      "No esperes resultados diferentes si siempre haces lo mismo.",
+      "El mejor momento para plantar un árbol fue hace 20 años. El segundo mejor momento es ahora.",
+      "El único lugar donde el éxito viene antes que el trabajo es en el diccionario."
+    ];
+
+    function mostrarFraseAleatoria() {
+      var indiceAleatorio = Math.floor(Math.random() * frases.length);
+      var frase = frases[indiceAleatorio];
+      var elementoFrase = document.getElementById("fraseAleatoria");
+      elementoFrase.textContent = frase;
+    }
+  </script>
+</body>
+</html>

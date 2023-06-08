@@ -1,0 +1,90 @@
+<html>
+    <head>
+
+    </head>
+<body>
+    <h2>¿Qué podemos hacer con Javascript?</h2>
+
+<p id="demo">Con Javascript podemos alterar nuestro sitio según la interacción del usuario</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Clickeame</button>
+    <script>
+        /*
+        console.log("Hola a todo el curso de Produccion Digital 2");
+        var variable = 5;
+        var texto = "Esto es un texto";
+        var booleano = false;
+        console.log(texto);
+        var a = 10;
+        var b = 5;
+        console.log(a);
+        console.log(b);
+        var c = a;
+        console.log(c);
+        */
+        var suma = 10.9 + 10;
+        console.log(suma);
+        var resta = 10 - 5;
+        console.log(resta);
+        var multiplicar = 5 * 4;
+        console.log(multiplicar);
+        var dividir = 214 % 5;
+        console.log("El resultado de la division es:");
+        console.log(dividir);
+        var decimal = 9.9;
+        var arreglo = [10,"soy el numero 20",30.9,50,false,100];
+        var Pd2 = ["Comunicacion Digital",23,"Son Geniales","van a aprobar"];
+        var verduleria = ["Papa","Zapallo","Zanahoria","Tomate"];
+        console.log(verduleria[2]);
+        var arrays = [20,40,100];
+        var sumandoArrays = arrays[0]+arrays[2];
+        console.log("El resultado de sumando arrays es:"+" "+sumandoArrays);
+        console.log("Tengo que comprar"+" "+ verduleria[3]);
+
+        function mostrarHolaMundo () {
+            console.log("Hola Mundo 1 vez");
+            console.log(decimal);
+            console.log("Hola Mundo 3 veces");
+
+        };
+        
+        mostrarHolaMundo();
+        mostrarHolaMundo();
+        mostrarHolaMundo();
+        mostrarHolaMundo();
+
+        var dormir = false;
+
+        if (dormir == true){
+            mostrarHolaMundo();
+            console.log("No nos despierten");
+            
+        }else {
+            console.log("Estamos despiertos");
+        };
+
+        if (decimal < 10){
+            console.log("Decimal es menor que 10");
+        }else{
+            console.log("Decimal es mayor que 10");
+        }
+
+        var miTemperatura = 40;
+
+        function chequeoTemperatura (miTemperatura){
+            if (miTemperatura < 60){
+                console.log("Tengo frio");
+            }else {
+                console.log("La temperatura esta perfecta");
+            };
+        };
+        var miTemperatura = 30;
+        chequeoTemperatura(miTemperatura);
+        
+        if (miTemperatura < 50){
+            document.getElementById('demo').style.fontSize='80px'; 
+        }
+        
+    </script>
+</body>
+</html>

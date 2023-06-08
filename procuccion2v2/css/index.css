@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+.btn{
+  display: block;
+  color: rgba(39, 17, 28, 0);
+  background-color: rgba(39, 17, 28, 0);
+  animation: titilar;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+}
+h3{
+  font-size: 40px;
+}
+
+.subtitulo{
+  color: darkgrey;
+}
+
+.panel-body{
+  background-color: antiquewhite;
+}
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mb-3{
+  background-color: grey;
+  color: red;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.pepe {
+  flex: 30%;
+  background-color: red;
+  padding: 20px;
+}
+
+#uniquebutton{
+  background-color: yellow;
+}
+/* Main column */
+.main {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.frase_celebre{
+  flex: 100%;
+  align-content: center;
+  text-align: center;
+  background-color: #1abc9c;
+}
+.card{
+  margin: 30px;
+  margin-bottom:30px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+h1{
+  color: red;
+  background-color: aqua;
+  animation: cambiocolor;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.card:nth-child(3){
+  background-color: red;
+  animation: cambiocolor;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+.fa-car{
+  display: block;
+  color: rgba(98, 94, 96, 0);
+  position: relative;
+  left:200px;
+  animation: titilar;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movimiento{
+  from{
+    left:0;
+  }
+  to{
+    left:200px;
+  }
+}
+
+@keyframes cambiocolor{
+  0%{
+    color:red;
+    background-color: aqua;
+  }
+  50%{
+    color:blue;
+    background-color: brown;
+  }
+  75%{
+    color:green;
+    background-color: yellow;
+  }
+  100%{
+    color:red;
+    background-color: aqua;
+
+  }
+}
+
+@keyframes titilar {
+
+  0%{
+    display: none;
+    color: rgba(98, 94, 96, 0);
+    background-color: rgba(39, 17, 28, 0);
+  }
+  50%{
+    display: block;
+    color: rgba(245, 40, 145, 0.83);
+    background-color: rgba(3, 13, 99, 0.83);
+  }
+  100%{
+    display: none;
+    color: rgba(98, 94, 96, 0);
+    background-color: rgba(39, 17, 28, 0);
+  }
+
+
+}
